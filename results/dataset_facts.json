@@ -1,0 +1,53 @@
+{
+  "parameters": {
+    "small_cnn": {
+      "trainable": 304097,
+      "total": 304993
+    },
+    "resnet50_frozen": {
+      "trainable": 2049,
+      "total": 23589761
+    },
+    "efficientnetb0_frozen": {
+      "trainable": 1281,
+      "total": 4050852
+    },
+    "resnet50_finetuned": {
+      "trainable": 23536641,
+      "total": 23589761
+    },
+    "efficientnetb0_finetuned": {
+      "trainable": 4008829,
+      "total": 4050852
+    }
+  },
+  "jpeg_quality_estimate": {
+    "method": "nearest IJG-scaled luminance quantisation table, 500 files per class and split",
+    "by_class": {
+      "train/REAL": {
+        "sampled": 500,
+        "quality_values": [
+          75
+        ]
+      },
+      "train/FAKE": {
+        "sampled": 500,
+        "quality_values": [
+          75
+        ]
+      },
+      "test/REAL": {
+        "sampled": 500,
+        "quality_values": [
+          75
+        ]
+      },
+      "test/FAKE": {
+        "sampled": 500,
+        "quality_values": [
+          75
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# Data lives outside the repository
+data/
+*.zip
+*.tar.gz
+
+# Model weights are hosted on Hugging Face, not committed
+models/
+*.keras
+*.h5
+*.weights.h5
+
+# Credentials
+.env
+*.token
+access_token
+kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+rescored/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

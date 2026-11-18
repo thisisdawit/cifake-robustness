@@ -1,0 +1,34 @@
+{
+  "root": "C:\\DL_data\\cifake",
+  "splits": {
+    "train": {
+      "REAL": 50000,
+      "FAKE": 50000,
+      "total": 100000
+    },
+    "test": {
+      "REAL": 10000,
+      "FAKE": 10000,
+      "total": 20000
+    }
+  },
+  "image_properties": {
+    "sizes": {
+      "32x32": 2000
+    },
+    "modes": {
+      "RGB": 2000
+    },
+    "formats": {
+      "JPEG": 2000
+    },
+    "sampled_per_class_per_split": 500
+  },
+  "integrity": {
+    "unique_train": 99080,
+    "unique_test": 19962,
+    "duplicates_within_train": 920,
+    "duplicates_within_test": 38,
+    "exact_duplicates_across_split": 378
+  }
+}

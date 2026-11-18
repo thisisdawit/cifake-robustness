@@ -1,0 +1,118 @@
+{
+ "clean": {
+  "file": "clean.bin",
+  "layout": [
+   {
+    "type": "conv",
+    "cin": 3,
+    "cout": 32
+   },
+   {
+    "type": "conv",
+    "cin": 32,
+    "cout": 32
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "conv",
+    "cin": 32,
+    "cout": 64
+   },
+   {
+    "type": "conv",
+    "cin": 64,
+    "cout": 64
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "conv",
+    "cin": 64,
+    "cout": 128
+   },
+   {
+    "type": "conv",
+    "cin": 128,
+    "cout": 128
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "dense",
+    "nin": 128,
+    "nout": 128,
+    "activation": "relu"
+   },
+   {
+    "type": "dense",
+    "nin": 128,
+    "nout": 1,
+    "activation": "sigmoid"
+   }
+  ],
+  "floats": 303649,
+  "source": "small_cnn"
+ },
+ "hardened": {
+  "file": "hardened.bin",
+  "layout": [
+   {
+    "type": "conv",
+    "cin": 3,
+    "cout": 32
+   },
+   {
+    "type": "conv",
+    "cin": 32,
+    "cout": 32
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "conv",
+    "cin": 32,
+    "cout": 64
+   },
+   {
+    "type": "conv",
+    "cin": 64,
+    "cout": 64
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "conv",
+    "cin": 64,
+    "cout": 128
+   },
+   {
+    "type": "conv",
+    "cin": 128,
+    "cout": 128
+   },
+   {
+    "type": "pool"
+   },
+   {
+    "type": "dense",
+    "nin": 128,
+    "nout": 128,
+    "activation": "relu"
+   },
+   {
+    "type": "dense",
+    "nin": 128,
+    "nout": 1,
+    "activation": "sigmoid"
+   }
+  ],
+  "floats": 303649,
+  "source": "small_cnn_hardened"
+ }
+}
